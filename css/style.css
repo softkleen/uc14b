@@ -1,0 +1,37 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "h h h h h h" 
+                        "a a m m m m"
+                         "f f f f f f";
+    grid-gap: 2px;
+    margin-top: 15px;
+}
+header{
+    border: 1px solid #25422A;
+    grid-area: h;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    background-color: #25422A;
+
+}
+main{
+    border: 1px solid #FDE74C;
+    grid-area: m;
+    height: 560px;
+    background-color: #FDE74C;
+}
+.menulateral{
+    border: solid 1px #95F9E3;
+    grid-area: a;
+    height: 560px;
+    background-color: #95F9E3;
+}
+footer{
+    grid-area: f;
+    border: 1px #FA8334;
+    height: 60px;
+    background-color: #FA8334;
+}
